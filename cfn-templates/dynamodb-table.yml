@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: "weather station data table"
+
+Outputs:
+
+  WeatherStationTableName:
+    Value: !Ref WeatherStationTable
+    Export:
+      Name: WeatherStationTableName
+
+Resources:
+  WeatherStationTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: "weather-station"
+      AttributeDefinitions:
+      - AttributeName: "time"
+        AttributeType: "S"
+      KeySchema:
+      - AttributeName: "time"
+        KeyType: HASH
+      BillingMode: "PAY_PER_REQUEST"
+      Tags:
+        - Key: project
+          Value: weather-station

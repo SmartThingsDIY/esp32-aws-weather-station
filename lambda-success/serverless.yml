@@ -1,0 +1,29 @@
+# Happy Coding!
+
+service: dht11-sensor-success-handler
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-1
+  profile: iot
+  environment:
+    DYNAMODB_TABLE: weather-station
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:*
+      Resource:
+      - arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}
+
+functions:
+  process:
+    handler: handler.process
+    reservedConcurrency: 5
+    versionFunctions: false # optional, default is true
+    memory: 512
+    timeout: 2
+    events:
+      - iot:
+          name: esp32DHT11
+          sql: "SELECT * FROM 'thing/esp32/pub'"
