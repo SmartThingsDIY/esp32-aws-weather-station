@@ -25,12 +25,9 @@ router.get('/data/get', (req, res) => {
 
     documentClient.query(params, function (err, data) {
         if (err) {
-            console.log('error');
-            console.log(err, err.stack);
+            console.error(err, err.stack);
         } else {
-            console.log(data);
-            // dispatch to a queue to be set in cache
-
+            console.debug(data);
             res.send({
                 code: '200',
                 data: data
