@@ -23,7 +23,6 @@ functions:
     versionFunctions: false # optional, default is true
     memory: 512
     timeout: 2
-    events:
-      - iot:
-          name: esp32Rule
-          sql: "SELECT * FROM 'thing/esp32/pub'"
+    tags:
+      - Key: project
+        Value: weather-station

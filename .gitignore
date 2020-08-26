@@ -1,1 +1,4 @@
 code/secrets.h
+weather-station-reader/node_modules
+weather-station-reader/.serverless
+weather-station-writer/.serverless

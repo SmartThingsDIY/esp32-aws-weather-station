@@ -1,0 +1,16 @@
+{
+  "name": "weather-station-reader",
+  "version": "1.0.0",
+  "description": "Read events From Dynamo Table",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "moment": "^2.27.0",
+    "serverless-http": "^2.5.0"
+  },
+  "author": "isbkch"
+}

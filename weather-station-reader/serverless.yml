@@ -1,0 +1,33 @@
+# Happy Coding!
+
+service: weather-station-reader
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-1
+  environment:
+    DYNAMODB_TABLE: weather-station
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:*
+      Resource:
+        - arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE} # table
+
+functions:
+  app:
+    handler: app.handler
+    description: Read events From Dynamo Table
+    reservedConcurrency: 10
+    versionFunctions: false # optional, default is true
+    memory: 512
+    timeout: 2
+    events:
+      - http:
+          path: /data/get
+          method: GET
+          cors: true
+    tags:
+      - Key: project
+        Value: weather-station
