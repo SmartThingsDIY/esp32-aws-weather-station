@@ -58,3 +58,5 @@ Or use this <a href="https://amzn.to/3hxR01A">KIT from WayinTop</a> that already
 <h1>AWS SETUP</h1>
 
 <p>Now that parts are connected and the libraries are installed, it's time to setup the AWS part.</p>
+
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/aws-architecture.png?raw=true" style="max-width:100%;" height="600">
