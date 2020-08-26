@@ -35,8 +35,19 @@ Or use this <a href="https://amzn.to/3hxR01A">KIT from WayinTop</a> that already
 <img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/schematic.png?raw=true" style="max-width:100%;" height="600">
 
 <h1>Installing Libraries</h1>
-<p>To read from the DHT sensor, we’ll use the DHT library from Adafruit. To use this library you also need to install the Adafruit Unified Sensor library. Follow the next steps to install those libraries.</p>
+<p>To read from the DHT sensor, we'll use the <a href="https://github.com/adafruit/DHT-sensor-library">DHT library from Adafruit</a>. To use this library you also need to install the <a href="https://github.com/adafruit/Adafruit_Sensor">Adafruit Unified Sensor library</a>. Follow the next steps to install those libraries.</p>
 
-<p>Open your Arduino IDE and go to Sketch > Include Library > Manage Libraries. The Library Manager should open.</p>
+<p>Open your Arduino IDE and go to <strong>Sketch > Include Library > Manage Libraries</strong>. The Library Manager should open.</p>
 
-<p>Search for “DHT” on the Search box and install the DHT library from Adafruit.</p>
+<p>Search for <strong>"DHT"</strong> on the Search box and install the DHT library from Adafruit.</p>
+
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/adafruit_dht_library.png?raw=true" style="max-width:100%;" height="600">
+
+<p>After installing the DHT library from Adafruit, type <strong>"Adafruit Unified Sensor"</strong> in the search box. Scroll all the way down to find the library and install it.</p>
+
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/adafruit_unified_sensor_library.png?raw=true" style="max-width:100%;" height="600">
+
+<p>After installing the libraries, restart your Arduino IDE.</p>
+
+<h1>THE CODE</h1>
+<p>To read temperature and humidity from the DHT sensor, we'll use an example based on the Adafruit DHT library. Copy the following code to your Arduino IDE.</p>
