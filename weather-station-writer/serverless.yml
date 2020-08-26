@@ -1,6 +1,6 @@
 # Happy Coding!
 
-service: dht11-sensor-success-handler
+service: weather-station-writer
 
 provider:
   name: aws

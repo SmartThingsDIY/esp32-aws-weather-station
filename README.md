@@ -16,6 +16,12 @@
 Or use this <a href="https://amzn.to/3hxR01A">KIT from WayinTop</a> that already contains everything
 <br>
 
+<h1>🚀APPS</h1>
+<ul>
+    <li><a href="https://www.arduino.cc/en/main/software">Arduino IDE</a></li>
+    <li><a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html">AWS cli</a></li>
+</ul>
+
 <h1>DHT11 vs DHT22 SENSORS</h1>
 <img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/DHT11-DHT22-Temperature-Humidity-Sensor.jpg?raw=true" style="max-width:100%;" height="350">
 <p>The <a href="https://amzn.to/2Qs9fcV">DHT11</a> and <a href="https://amzn.to/31t7P8l">DHT22</a> sensors are used to measure temperature and relative humidity. These are very popular among makers and electronics hobbyists.</p>
@@ -49,5 +55,6 @@ Or use this <a href="https://amzn.to/3hxR01A">KIT from WayinTop</a> that already
 
 <p>After installing the libraries, restart your Arduino IDE.</p>
 
-<h1>THE CODE</h1>
-<p>To read temperature and humidity from the DHT sensor, we'll use an example based on the Adafruit DHT library. Copy the following code to your Arduino IDE.</p>
+<h1>AWS SETUP</h1>
+
+<p>Now that parts are connected and the libraries are installed, it's time to setup the AWS part.</p>
