@@ -3,7 +3,7 @@
 <p>In the <strong>first part</strong>, we'll go through a quick introduction to these sensors, pinout, wiring diagram, and finally the Arduino sketch (code).</p>
 <p>In the <strong>second part</strong>, we'll see how to connect out DYI weather station to AWS IoT in order to store the data, visualize it and run some analytics on it.</p>
 
-<h1>PART 1</h1>
+<h1>PART ONE</h1>
 
 <h2>⚡️ COMPONENTS AND SUPPLIES</h2>
 
@@ -58,6 +58,18 @@ EDIT: Or use this <a href="https://amzn.to/3hxR01A">KIT from WayinTop</a> that a
 <img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/adafruit_unified_sensor_library.png?raw=true" style="max-width:100%;" height="600">
 
 <p>After installing the libraries, restart your Arduino IDE.</p>
+
+<h2>THE CODE</h2>
+<p>Rename the file <a href="https://github.com/isbkch/esp32-aws-weather-station/blob/master/secrets.h.public"> secret.h.public</a> to <strong>secret.h</strong> and edit it with your information:
+    <ul>
+        <li>1. Select your thing from <a href="https://console.aws.amazon.com/iot/home?region=us-east-1#/thinghub">this page</a></li>
+        <li>2. From the left menu, select <strong>Security</strong> and click the button "<strong>Create Certificate</strong></li>
+        <li>3. Now download From the left menu, select <strong>Security</strong> and click the button "<strong>Create Certificate</strong></li>
+
+            Select your thing from <a href="https://console.aws.amazon.com/iot/home?region=us-east-1#/thinghub">this page</a></li>
+    </ul>
+
+    then open the file <a href="https://github.com/isbkch/esp32-aws-weather-station/blob/master/code.ino">code.ino</a> with Arduino IDE</p>
 
 <h1>PART TWO</h1>
 <h2>AWS SETUP</h2>
