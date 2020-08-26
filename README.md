@@ -1,5 +1,7 @@
 # Weather Station with ESP32 board and AWS IOT
-<p>This tutorial shows how to use the <a href="https://amzn.to/2Qs9fcV">DHT11</a> and <a href="https://amzn.to/31t7P8l">DHT22</a> temperature and humidity sensors with the <a href="https://amzn.to/3jmCpqx">ESP32</a> using Arduino IDE. We'll go through a quick introduction to these sensors, pinout, wiring diagram, and finally the Arduino sketch (code).</p>
+<p>This tutorial shows how to use the <a href="https://amzn.to/2Qs9fcV">DHT11</a> and <a href="https://amzn.to/31t7P8l">DHT22</a> temperature and humidity sensors with the <a href="https://amzn.to/3jmCpqx">ESP32</a> using Arduino IDE.<p/>
+<p>In the <strong>first part</strong>, we'll go through a quick introduction to these sensors, pinout, wiring diagram, and finally the Arduino sketch (code).</p>
+<p>In the <strong>second part</strong>, we'll see how to connect out DYI weather station to AWS IoT in order to store the data, visualize it and run some analytics on it.</p>
 
 <h1>⚡️ COMPONENTS AND SUPPLIES</h1>
 
