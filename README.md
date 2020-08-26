@@ -3,18 +3,33 @@
 
 <h1>⚡️ COMPONENTS AND SUPPLIES</h1>
 
-<img align="right" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/esp-32.jpg?raw=true" style="max-width:100%;" height="350">
+<img align="right" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/esp-32.jpg?raw=true" style="max-width:100%;" height="200">
 
 <ul>
     <li><a href="https://amzn.to/3jmCpqx">ESP32 Board</a></li>
     <li><a href="https://amzn.to/2Ei40tP">Breadboard</a></li>
     <li><a href="https://amzn.to/2Ehh2ru">Jumper Wires</a></li>
-    <li><a href="https://amzn.to/2Qs9fcV">DHT11 Temperature Humidity Sensor</a></li>
+    <li><a href="https://amzn.to/2Qs9fcV">DHT11</a> or <a href="https://amzn.to/31t7P8l">DHT22</a> Temp & Humidity Sensor</a></li>
+    <li><a href="https://amzn.to/2Qo7vkW">10k Ohm resistor</a></li>
+
 </ul><br>
 Or use this <a href="https://amzn.to/3hxR01A">KIT from WayinTop</a> that already contains everything
 <br>
 
-<h1>WHAT IS A HUMIDITY SENSOR</h1>
+<h1>DHT11 vs DHT22 SENSORS</h1>
 <img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/DHT11-DHT22-Temperature-Humidity-Sensor.jpg?raw=true" style="max-width:100%;" height="350">
 <p>The <a href="https://amzn.to/2Qs9fcV">DHT11</a> and <a href="https://amzn.to/31t7P8l">DHT22</a> sensors are used to measure temperature and relative humidity. These are very popular among makers and electronics hobbyists.</p>
 <p>These sensors contain a chip that does analog to digital conversion and spit out a digital signal with the temperature and humidity. This makes them very easy to use with any microcontroller.</p>
+<p>The DHT11 and DHT22 are very similar, but differ in their specifications.</p>
+
+<p>The DHT22 sensor has a better resolution and a wider temperature and humidity measurement range. However, it is a bit more expensive, and you can only request readings with 2 seconds interval.</p>
+
+<p>The DHT11 has a smaller range and it's less accurate. However, you can request sensor readings every second. It's also a bit cheaper.</p>
+
+<p>Despite their differences, they work in a similar way, and you can use the same code to read temperature and humidity. You just need to select in the code the sensor type you're using.</p>
+
+<h1>Schematic Diagram</h1>
+
+<p>Wire the <a href="https://amzn.to/2Qs9fcV">DHT11</a> or <a href="https://amzn.to/31t7P8l">DHT22</a> sensor to the <a href="https://amzn.to/3jmCpqx">ESP32</a> development board as shown in the following schematic diagram.</p>
+
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/schematic.png?raw=true" style="max-width:100%;" height="600">
