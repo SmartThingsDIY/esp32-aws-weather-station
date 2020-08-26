@@ -1,8 +1,8 @@
 'use strict';
 
 const routes     = require('./routes/index');
-const serverless = require('serverless-http');
-const express    = require('express');
+const serverless = require('./node_modules/serverless-http/serverless-http');
+const express    = require('./node_modules/express');
 
 const app = express();
 app.use(express.urlencoded({ extended: true }));

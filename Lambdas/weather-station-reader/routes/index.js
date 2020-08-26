@@ -1,9 +1,9 @@
 'use strict';
 
-const express        = require('express');
+const express        = require('../node_modules/express');
 const router         = express.Router();
-var   moment         = require('moment');
-var   AWS            = require('aws-sdk');
+var   moment         = require('../node_modules/moment/ts3.1-typings/moment');
+var   AWS            = require('./node_modules/aws-sdk');
 const documentClient = new AWS.DynamoDB.DocumentClient();
 
 router.get('/data/get', (req, res) => {
