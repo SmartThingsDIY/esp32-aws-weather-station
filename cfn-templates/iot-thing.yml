@@ -1,0 +1,39 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: "weather station IoT Thing"
+
+Resources:
+  WeatherStationThing:
+    Type: AWS::IoT::Thing
+    Properties:
+      ThingName: esp32
+      Tags:
+        - Key: project
+          Value: weather-station
+
+  WeatherStationPolicy:
+    Type: AWS::IoT::Policy
+    Properties:
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action:
+              - 'iot:Connect'
+            Resource:
+              - '*' # replace by the ARN of your client
+          - Effect: Allow
+              Action:
+                - 'iot:Connect'
+              Resource:
+                - '*' # replace by the ARN of your client
+          - Effect: Allow
+              Action:
+                - 'iot:Connect'
+              Resource:
+                - '*' # replace by the ARN of your client
+          - Effect: Allow
+              Action:
+                - 'iot:Connect'
+              Resource:
+                - '*' # replace by the ARN of your client
+      PolicyName: esp32Policy

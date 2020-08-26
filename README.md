@@ -58,5 +58,6 @@ Or use this <a href="https://amzn.to/3hxR01A">KIT from WayinTop</a> that already
 <h1>AWS SETUP</h1>
 
 <p>Now that parts are connected and the libraries are installed, it's time to setup the AWS part.</p>
+<p>As you see in the diagram below, the ESP board will be sending data through an MQTT topic to AWS IoT Core, we will be applying rules on the raw data and invoking a Lambda that writes the data to a dynamoDB table. Afterwards, we can read that data and display it on a webpage</p>
 
-<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/aws-architecture.png?raw=true" style="max-width:100%;" height="600">
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/aws-architecture.png?raw=true" style="max-width:100%;" height="350">

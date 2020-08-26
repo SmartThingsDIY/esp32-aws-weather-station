@@ -25,5 +25,5 @@ functions:
     timeout: 2
     events:
       - iot:
-          name: esp32DHT11
+          name: esp32Rule
           sql: "SELECT * FROM 'thing/esp32/pub'"
