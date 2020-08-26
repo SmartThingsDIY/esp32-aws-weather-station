@@ -33,3 +33,10 @@ Or use this <a href="https://amzn.to/3hxR01A">KIT from WayinTop</a> that already
 <p>Wire the <a href="https://amzn.to/2Qs9fcV">DHT11</a> or <a href="https://amzn.to/31t7P8l">DHT22</a> sensor to the <a href="https://amzn.to/3jmCpqx">ESP32</a> development board as shown in the following schematic diagram.</p>
 
 <img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/img/schematic.png?raw=true" style="max-width:100%;" height="600">
+
+<h1>Installing Libraries</h1>
+<p>To read from the DHT sensor, we’ll use the DHT library from Adafruit. To use this library you also need to install the Adafruit Unified Sensor library. Follow the next steps to install those libraries.</p>
+
+<p>Open your Arduino IDE and go to Sketch > Include Library > Manage Libraries. The Library Manager should open.</p>
+
+<p>Search for “DHT” on the Search box and install the DHT library from Adafruit.</p>
