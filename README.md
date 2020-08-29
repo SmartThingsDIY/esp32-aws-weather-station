@@ -6,7 +6,7 @@ In the **first part**, we'll go through a quick introduction to these sensors, p
 
 In the **second part**, we'll see how to connect out DYI weather station to AWS IoT in order to store the data, visualize it and run some analytics on it.
 
-![](https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/aws-architecture.png?raw=true)
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/aws-architecture.png?raw=true" style="max-width:100%;" height="350">
 
 PART ONE
 ========
@@ -14,7 +14,7 @@ PART ONE
 ⚡️ COMPONENTS AND SUPPLIES
 --------------------------
 
-![](https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/esp-32.jpg?raw=true)
+<img align="right" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/esp-32.jpg?raw=true" style="max-width:100%;" height="200">
 
 *   [ESP32 Board](https://amzn.to/3jmCpqx)
 *   [Breadboard](https://amzn.to/2Ei40tP)
@@ -23,7 +23,7 @@ PART ONE
 *   [10k Ohm resistor](https://amzn.to/2Qo7vkW)
 
 
-EDIT: Or use this [KIT from WayinTop](https://amzn.to/3hxR01A) that already contains everything  
+EDIT: Or use this [KIT from WayinTop](https://amzn.to/3hxR01A) that already contains everything
 
 🚀APPS
 ------
@@ -34,7 +34,7 @@ EDIT: Or use this [KIT from WayinTop](https://amzn.to/3hxR01A) that already cont
 DHT11 vs DHT22 SENSORS
 ----------------------
 
-![](https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/DHT11-DHT22-Temperature-Humidity-Sensor.jpg?raw=true)
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/DHT11-DHT22-Temperature-Humidity-Sensor.jpg?raw=true" 
 
 The [DHT11](https://amzn.to/2Qs9fcV) and [DHT22](https://amzn.to/31t7P8l) sensors are used to measure temperature and relative humidity. These are very popular among makers and electronics hobbyists.
 
@@ -53,7 +53,7 @@ Schematic Diagram
 
 Wire the [DHT11](https://amzn.to/2Qs9fcV) or [DHT22](https://amzn.to/31t7P8l) sensor to the [ESP32](https://amzn.to/3jmCpqx) development board as shown in the following schematic diagram.
 
-![](https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/schematic.png?raw=true)
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/schematic.png?raw=true" style="max-width:100%;" height="600">
 
 Installing Libraries
 --------------------
@@ -64,11 +64,11 @@ Open your Arduino IDE and go to **Sketch > Include Library > Manage Libraries**.
 
 Search for **"DHT"** on the Search box and install the DHT library from Adafruit.
 
-![](https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/adafruit_dht_library.png?raw=true)
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/adafruit_dht_library.png?raw=true" style="max-width:100%;" height="600">
 
 After installing the DHT library from Adafruit, type **"Adafruit Unified Sensor"** in the search box. Scroll all the way down to find the library and install it.
 
-![](https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/adafruit_unified_sensor_library.png?raw=true)
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/adafruit_unified_sensor_library.png?raw=true" style="max-width:100%;" height="600">
 
 After installing the libraries, restart your Arduino IDE.
 
@@ -94,4 +94,4 @@ Now that parts are connected and the libraries are installed, it's time to setup
 
 As you see in the diagram below, the ESP board will be sending data through an MQTT topic to AWS IoT Core, we will be applying rules on the raw data and invoking a Lambda that writes the data to a dynamoDB table. Afterwards, we can read that data and display it on a webpage
 
-![](https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/aws-architecture.png?raw=true)
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/aws-architecture.png?raw=true" style="max-width:100%;" height="350">
