@@ -34,7 +34,7 @@ EDIT: Or use this [KIT from WayinTop](https://amzn.to/3hxR01A) that already cont
 DHT11 vs DHT22 SENSORS
 ----------------------
 
-<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/DHT11-DHT22-Temperature-Humidity-Sensor.jpg?raw=true" 
+<img align="center" src="https://github.com/isbkch/esp32-aws-weather-station/blob/master/docs/DHT11-DHT22-Temperature-Humidity-Sensor.jpg?raw=true">
 
 The [DHT11](https://amzn.to/2Qs9fcV) and [DHT22](https://amzn.to/31t7P8l) sensors are used to measure temperature and relative humidity. These are very popular among makers and electronics hobbyists.
 
