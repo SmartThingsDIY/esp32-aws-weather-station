@@ -2,7 +2,7 @@
 
 This tutorial shows how to use the [DHT11](https://amzn.to/2Qs9fcV) and [DHT22](https://amzn.to/31t7P8l) temperature and humidity sensors with the [ESP32](https://amzn.to/3jmCpqx) using Arduino IDE.
 
-In the **first part**, we'll go through a quick introduction to these sensors, pinout, wiring diagram, and finally the Arduino sketch (code).
+In the **first part**, we'll go through a quick introduction to these sensors, pinout, wiring diagram, and finally the Arduino sketch.
 
 In the **second part**, we'll see how to connect out DYI weather station to AWS IoT in order to store the data, visualize it and run some analytics on it.
 
@@ -78,11 +78,11 @@ THE CODE
 Rename the file [secret.h.public](https://github.com/isbkch/esp32-aws-weather-station/blob/master/secrets.h.public) to **secret.h** and edit it with your information:
 
 *   1\. Select your thing from [this page](https://console.aws.amazon.com/iot/home?region=us-east-1#/thinghub)
-*   2\. From the left menu, select **Security** and click the button "**Create Certificate**
-*   3\. Now download From the left menu, select **Security** and click the button "**Create Certificate**
-Select your thing from [this page](https://console.aws.amazon.com/iot/home?region=us-east-1#/thinghub)
+*   2\. From the left menu, select **Security** and click the button "**Create Certificate**"
+*   3\. Now download both files *.cert.pem and *.private.key and replace their content in the **secret.h**. And don't forget to activate your Certificate.
+*   4\. Back to the left menu, click **Interact** and copy the HTTPS link then paste it into **secret.h** as well.
 
-then open the file [code.ino](https://github.com/isbkch/esp32-aws-weather-station/blob/master/code.ino) with Arduino IDE
+Finally, open the file [esp32-aws-weather-station.ino](https://github.com/isbkch/esp32-aws-weather-station/blob/master/esp32-aws-weather-station.ino) with Arduino IDE
 
 PART TWO
 ========
